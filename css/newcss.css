@@ -4,10 +4,12 @@ body{
     width: auto;
     height:auto;
 }
-.nav li:hover{
-    color:white;
-    font-style: italic;
+.ninja{
+    color:darkcyan;
+    font-family: cursive;
+    font-size: x-large;
 }
+
 .nav ul{
     text-align: center;
     list-style: none;
@@ -20,6 +22,12 @@ body{
     font-size:1.5em;
     text-align: center;
 }
+.nav  li a:hover{
+    color:yellow;
+    font-family: cursive;
+    font-style: italic;
+
+}
 section{
     width:900px;
     height: 600px;
@@ -31,9 +39,9 @@ section{
 }
 .uno .entry p{
    font-family: cursive;
-   color: green;
+   color: darkcyan;
    position: relative; 
-   top:30px;
+   top:10px;
    margin-right: 10px;
    margin-left: 300px;
    text-align: center;
@@ -50,7 +58,7 @@ section{
 }
 .uno .entry .pig{
     position:relative;
-    bottom:-150px;
+    bottom:-60px;
     float: right;
     margin-right: 10px;
     border-radius:3px;
@@ -60,43 +68,58 @@ section{
 .uno .entry a.link{
     position:relative;
     float:left;
-    bottom:-330px;
-    margin-left:-255px;
+    bottom:-245px;
+    margin-left:-245px;
     color:grey;
     font-family: cursive;
+}
+.uno a.link:hover{
+    background-color: lavender;
+    border-radius:4px;
+    color: #60c4f5;
+    font-family: cursive;
+    font-style: italic;
 }
 .duo h2{
     text-align: center;
     font-family: cursive;
-    color:green;
-}
+    color:darkcyan;
 
-.duo h3{
-    text-indent: 10pt;
-    font-family: cursive;
-    color:green;
 }
-
 .duo a.link{
     position:relative;
     float:left;
-    bottom:-450px;
+    bottom:-10px;
     margin-left: 10px;
     color:grey;
     font-family: cursive;
-    border:2px red solid;
+}
+.duo a.link:hover{
+    background-color: lavender;
+    border-radius:4px;
+    color: #60c4f5;
+    font-family: cursive;
+    font-style: italic;
+}
+.duo p{
+    font-weight: bold;
+    font-family: cursive;
+    color: darkcyan;
+    line-height: 2em;
+    text-align: justify;
+    text-indent:10px;
 }
 
 .trio h2{
     text-align: center;
     font-family: cursive;
-    color:green;
+    color:darkcyan;
 }
 
-.trio h3{
+.trio p{
     text-indent: 10pt;
     font-family: cursive;
-    color:green;
+    color:darkcyan;
 }
 
 .trio a.link{
@@ -106,54 +129,108 @@ section{
     margin-left: 10px;
     color:grey;
     font-family: cursive;
-    border:2px red solid;
+}
+.trio a.link:hover{
+    background-color: lavender;
+    border-radius:4px;
+    color: #60c4f5;
+    font-family: cursive;
+    font-style: italic;
 }
 
-footer{
+.last{
     width: 900px;
     height: 600px;
     background-color: aliceblue;
     border-radius: 20px;
-    //alignment-adjust: central;
     margin: 30px 30px 30px 160px;
     padding: 30px 30px 30px 30px;
     box-shadow: 2px 2px 19px 3px rgba(237,228,237,1);
 }
-footer .dane{
-    float:right;
-    position:relative;
-    top:-100px;
-    vertical-align: text-top; 
-    margin-left:10px;
-    border:1px red solid;
-    
+.last .dane {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    top: 0px;
 }
-footer .textarea p{
+
+.last input[type=email]{
+    width:300px;
+    height: 20px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+;
+}
+.last input[type=text]{
+    width: 300px;
+    height: 20px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.dane button[type=submit]{
+    color:#60c4f5;
+    font-family:cursive;
+    font-size: larger;
+    text-align: center;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+    background:rgb(17, 143, 251);
+}
+.dane button[type=submit]:hover{
+    background: yellow;
+    color:black;
+    font-family: "Arial Black", "Tahoma", "Times New Roman";
+    font-size: x-large;
+}
+.last .text p{
     font-family: cursive;
     color: fuchsia;
     font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top:60px;
+    left:300px;
+    width:300px;
 }
-footer .text_area{
+.last .box textarea{
+    resize:none;
     padding: 5px;
     border-radius: 4px;
-    border:1px solid red;
-    margin-right: 445px;
-    
-    
+    margin-left:40px;
+    width: 400px;
+    height: 100px;
+    font-family: cursive;
+    font-size: 25px;
+    position: relative;
+    top:110px;
 }
-footer .tel p{
+.last .tel p{
+    position:relative;
+    margin-left: 350px;
+    top:100px;
     text-align: center;
     font-family: cursive;
     color:#60c4f5;
     margin-top: 130px;
-    border:1px red solid;
+    width: 220px;
+    height: 50px;
 }
-footer a.link{
-    position:relative;
-    float:left;
-    bottom:-170px;
+.last a.link {
+    position: relative;
+    float: left;
+    bottom: -160px;
     margin-left: 10px;
-    color:grey;
+    color: grey;
     font-family: cursive;
-    border:2px red solid;
+}
+
+.last a.link:hover{
+    background-color: lavender;
+    border-radius:4px;
+    color: #60c4f5;
+    font-family: cursive;
+    font-style: italic;
 }
